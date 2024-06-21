@@ -1,3 +1,7 @@
+window.initializeComponent = (name, parameters) => {
+  console.log({ name: name, parameters: parameters });
+};
+
 const lcrEnvironment = "Development";
 const lcrBootstrapHost = "https://localhost:5443";
 
