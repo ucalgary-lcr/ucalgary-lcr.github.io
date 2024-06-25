@@ -2,8 +2,8 @@ window.initializeComponent = (name, parameters) => {
   console.log({ name: name, parameters: parameters });
 };
 
-const lcrEnvironment = "Development";
-const lcrBootstrapHost = "https://localhost:5443";
+const lcrEnvironment = "Production"; // Development
+const lcrBootstrapHost = "https://staging.library.ucalgary.ca"; // https://localhost:5443
 
 Blazor.start({
   environment: lcrEnvironment,
