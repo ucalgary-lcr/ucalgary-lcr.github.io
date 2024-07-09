@@ -23,5 +23,5 @@ Blazor.start({
 }).then(function () {
   let targetElement = document.getElementById("news-container");
   if (targetElement !== null)
-    Blazor.rootComponents.add(targetElement, "news-component", {});
+    Blazor.rootComponents.add(targetElement, "news-component", { baseAddress: lcrBootstrapHost });
 });
