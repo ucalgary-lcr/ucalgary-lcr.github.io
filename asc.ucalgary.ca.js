@@ -2,11 +2,11 @@ window.initializeComponent = (name, parameters) => {
   console.log({ name: name, parameters: parameters });
 };
 
-const lcrEnvironment = "Production"; // Development, Staging, Production
-const lcrBootstrapHost = "https://library.ucalgary.ca"; // https://localhost:5443
+//const lcrEnvironment = localStorage.getItem("lcrEnvironment") ?? "Production"; // Development, Staging, Production
+const lcrBootstrapHost = localStorage.getItem("lcrBootstrapHost") ?? "https://library.ucalgary.ca";
 
 Blazor.start({
-  environment: lcrEnvironment,
+  //environment: lcrEnvironment,
   loadBootResource: function (type, name, defaultUri, integrity) {
     console.log(
       `Loading: '${type}', '${name}', '${defaultUri}', '${integrity}'`
